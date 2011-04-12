@@ -1,20 +1,120 @@
-:markdown
-  We make websites
-  ================
+%h2 Projects
+#portfolio
+  :ruby
+    # TODO solarcolver
+    projects = %w/ swivel nko monitaur happytrack theglamourist gentrify lazeroids d2c /
 
-  Awesome websites things don't get made by themselves; they get made in
-  laboratories.
+  - projects.each do |project|
+    %img{ :src => "/images/screenshots/#{project}.png" }
 
-  We [create stuff] for ourselves and help others create their own ideas. We
-  handle everything from product definition through to implementation. [Write
-  to us] if you wish to collaborate or [learn more] about us.
+#pitch
+  :markdown
+    # Big Dreams. Swift starts.
 
-  Yes, [we][create stuff] ran [Node.js Knockout].
+    We make [web and mobile apps] that people love.
 
-  [create stuff]: /portfolio
-  [write to us]: /contact
-  [learn more]: /about
-  [Node.js Knockout]: http://nodeknockout.com
+    We can take [your idea] from high-level concept to useful product in as little as
+    [two weeks]. We charge $200/hr.
+
+    **Interested? [Email us.]**
+
+    [web and mobile apps]: #portfolio
+    [your idea]: #clients
+    [two weeks]: #process
+    [Email us.]: mailto:all@fortnightlabs.com
+
+%h2 Clients
+#clients
+  :ruby
+    clients = [
+      ['Sequoia Capital', 'http://www.sequoiacap.com/'],
+      ['SpotXchange', 'http://www.spotxchange.com/'],
+      ['Identified', 'http://www.identified.com/'],
+      ['Minor Ventures', 'http://minorventures.com/'],
+      ['Armageddon Energy', 'http://www.armageddonenergy.com/'],
+      # ['Public Library of Science', 'http://www.plos.org/'],
+      ['Mid Ventures', 'http://midventures.com/']].map do |name, url|
+        [name, url, name.downcase.split.join('-')]
+      end
+
+  - clients.each do |name, url, slug|
+    %a{ :href => url }<
+      %img.gray{ :src => "/images/clients/#{slug}-gray.png", :alt => name }
+      %img.color{ :src => "/images/clients/#{slug}.png", :alt => name }
+
+%h2 Team
+#team
+  :ruby
+    require 'digest/md5'
+    team = [
+      ['Visnu', 'Pitiyanuvath', 'visnu', 'visnup', 'visnu@fortnightlabs.com'],
+      ['Gerad', 'Suyderhoud', 'geradsuyderhoud', 'gerad', 'gerad@fortnightlabs.com']]
+  .members
+    - team.each do |first_name, last_name, linkedin_id, twitter_id, email|
+      .member
+        %img.avatar{ :src => "http://gravatar.com/avatar/#{Digest::MD5.hexdigest(email)}"}
+        .first_name= first_name
+        .last_name= last_name
+        .icons
+          %a{ :href => "http://linkedin.com/in/#{linkedin_id}" }<
+            %img{ :src => "/images/icons/linkedin.png" }
+          %a{ :href => "mailto:#{email}" }<
+            %img{ :src => "/images/icons/email.png" }
+          %a{ :href => "http://twitter.com/#{twitter_id}" }<
+            %img{ :src => "/images/icons/twitter.png" }
+
+  :markdown
+    We [are hiring].
+
+    [are hiring]: /hiring
+
+%h2 Process
+#process
+  :markdown
+    We create engaging products by identifying pressing problems and developing
+    simple solutions.
+
+    Our process allows us to learn quickly and iterate rapidly. It has four
+    pillars:
+
+    ### Define
+
+    Develop empathy for the market and discover the problems and stories
+    that shape it.
+
+    - Mine insights and likely adopters from the wealth of data on the web.
+    - Get out of the office to talk with and observe potential adopters in
+    their typical environment.
+
+    ### Design
+
+    Determine what problems to solve and what the solution looks like.
+
+    - Come up with potential solutions using brainstorming and mindmapping.
+    - Flesh out ideas with high-level sketches in pen and paper.
+    - Quickly test layouts and functionality with clickable HTML wireframes.
+    - Make it beautiful with a visual design pass.
+
+    ### Develop
+
+    Build the product with clean, tested code that serves as a solid
+    foundation for the future.
+
+    - Get insanely far with minimal effort by leveraging the latest technology:
+    HTML5, jQuery, MongoDB, Node.js, and Ruby on Rails.
+    - Use [agile development] to ensure that no work is wasted and everyone
+    stays on the same page.
+
+    ### Deploy
+
+    Quickly get the product in front of as many people as possible to learn
+    from feedback.
+
+    - Initially deploy to services that you never have to worry about
+    maintaining or upgrading.
+    - Scale your technology when success requires.
+
+    [agile development]: http://en.wikipedia.org/wiki/Agile_development
 
 .notes
   :markdown

@@ -104,6 +104,34 @@ nav
   :text-align center
   :margin-top 3em
 
+body
+  #team
+    .members
+      :overflow hidden
+      .member
+        :width 250px
+        :float left
+        :overflow hidden
+        .avatar
+          :float left
+          :margin-right 5px
+        .first_name
+          :font-size xx-large
+  #clients
+    :width 620px
+    :margin auto
+    img
+      :width 188px
+      :padding 5px
+      &.color
+        :display none
+    a:hover
+      img
+        &.gray
+          :display none
+        &.color
+          :display inline-block
+
 body.portfolio #contents
   img
     :float left

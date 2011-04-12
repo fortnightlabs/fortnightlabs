@@ -23,14 +23,13 @@
               %em fortnight
               labs
         %ul
-          - @pages.each do |p|
-            %li{ :class => request.path == "/#{p}" ? 'current' : '' }
-              %a{ :href => "/#{p}" }= p
-        %ul
           %li
-            %a{ :href => 'http://fortnightlabs.posterous.com/' } blog
+            %a{ :href => 'mailto:all@fortnightlabs.com' } all@fortnightlabs.com
+          %li 415.680.3864
           %li
-            %a{ :href => 'http://twitter.com/fortnightlabs' } twitter
+            440-B 9th Street
+            %br
+            San Francisco
 
       #contents
         #page-number= (@pages.index(params[:template]) || -1) * 2 + 3
