@@ -15,7 +15,6 @@
       });
   %body{ :class => params[:template] }
     #page
-      - @pages = %w/ portfolio contact about /
       %nav
         %h1{ :class => request.path == '/' ? 'current' : '' }
           %img{ :src => '/images/logo.png' }
@@ -36,7 +35,6 @@
             )
 
       #contents
-        #page-number= (@pages.index(params[:template]) || -1) * 2 + 3
         = yield
 
       #footer
