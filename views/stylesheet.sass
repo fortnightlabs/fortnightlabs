@@ -63,8 +63,9 @@ nav
     li
       :margin 0.5em 0px
   a
-    :padding 5px 20px
-  .current a
+    :text-decoration none
+  a.logo
+    :padding 5px 5px 5px 15px
     :background-color = !dark_sepia
     :color #fff
     :text-shadow rgba(0, 0, 0, 0.8) 0px -1px 0px
@@ -118,11 +119,13 @@ body
         .first_name
           :font-size xx-large
   #clients
-    :width 620px
-    :margin auto
+    :margin 10px auto
+    table
+      :width 100%
+      td
+        :text-align center
     img
-      :width 188px
-      :padding 5px
+      :width 120px
       &.color
         :display none
     a:hover
