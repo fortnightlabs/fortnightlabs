@@ -44,13 +44,10 @@
         [name, url, title, name.downcase.split.join('-')]
       end
 
-  %table
-    %tr
-      - clients.each do |name, url, title, slug|
-        %td
-          %a.iframe{ :href => "#{url}", :title => title }<
-            %img.gray{ :src => "/images/clients/#{slug}-gray.png", :alt => name }
-            %img.color{ :src => "/images/clients/#{slug}.png", :alt => name }
+  - clients.each do |name, url, title, slug|
+    %a.iframe{ :href => "#{url}", :title => title }<
+      %img.gray{ :src => "/images/clients/#{slug}-gray.png", :alt => name }
+      %img.color{ :src => "/images/clients/#{slug}.png", :alt => name }
 
 -# #team
   %h2 Team
