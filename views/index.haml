@@ -48,7 +48,7 @@
       %img.gray{ :src => "/images/clients/#{slug}-gray.png", :alt => name }
       %img.color{ :src => "/images/clients/#{slug}.png", :alt => name }
 
--# #team
+#team
   %h2 Team
   :ruby
     require 'digest/md5'
@@ -59,13 +59,13 @@
   .members
     - team.each do |first_name, last_name, linkedin_id, twitter_id, email|
       .member
-        %img.avatar{ :src => "http://gravatar.com/avatar/#{Digest::MD5.hexdigest(email)}"}
-        .first_name= first_name
-        .last_name= last_name
+        %img.avatar{ :src => "http://gravatar.com/avatar/#{Digest::MD5.hexdigest(email)}?s=60"}
+        .first-name= first_name
+        .last-name= last_name
         .icons
           %a{ :href => "http://linkedin.com/in/#{linkedin_id}" }<
             %img{ :src => "/images/icons/linkedin.png" }
-          %a{ :href => "mailto:#{email}" }<
-            %img{ :src => "/images/icons/email.png" }
           %a{ :href => "http://twitter.com/#{twitter_id}" }<
             %img{ :src => "/images/icons/twitter.png" }
+          %a{ :href => "mailto:#{email}" }<
+            %img{ :src => "/images/icons/email.png" }
