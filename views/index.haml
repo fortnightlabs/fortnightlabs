@@ -4,16 +4,16 @@
 
     We make web and mobile apps that people love.
 
-    We take **your idea** from high-level concept to [useful product] in as little as
-    two weeks. We charge $200/hr.
+    We take **your idea** from high-level concept to useful product in as little as
+    [two weeks]. We charge $225/hr.
 
     **Interested?**
     <a class="button" href="mailto:all@fortnightlabs.com">Email us</a>
 
-    [useful product]: /process
+    [two weeks]: /process
 
 #portfolio
-  %h2 Our Work
+  %h2 Work
   :ruby
     # TODO solarcolver
     projects = [
@@ -47,6 +47,21 @@
     %a.iframe{ :href => "#{url}", :title => title }<
       %img.gray{ :src => "/images/clients/#{slug}-gray.png", :alt => name }
       %img.color{ :src => "/images/clients/#{slug}.png", :alt => name }
+
+#tech
+  %h2 Tech
+  :ruby
+    tech = [
+      ['rails', 'Ruby on Rails', 'http://rubyonrails.org/'],
+      ['nodejs', 'node.js', 'http://nodejs.org/'],
+      ['jquery', 'jQuery', 'http://jquery.com/'],
+      ['mongodb', 'mongoDB', 'http://www.mongodb.org/'],
+      ['mysql', 'MySQL', 'http://www.mysql.com/'],
+      ['ios', 'iOS', 'http://www.apple.com/ios/'],
+      ['android', 'Android', 'http://www.android.com/']]
+  - tech.each do |img, title, url|
+    %a{ :href => url }<
+      %img{ :src => "/images/technologies/#{img}.png", :title => title }
 
 #team
   %h2 Team
