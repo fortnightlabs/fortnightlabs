@@ -38,30 +38,14 @@
       ['Identified', 'http://www.identified.com/', 'We integrated Identified with Google Contacts, Hotmail, and a dozens of other contact services.'],
       ['Minor Ventures', 'http://minorventures.com/', 'We built Swivel for Minor Ventures, and provided consulting services for the site after the company shutdown.'],
       ['Armageddon Energy', 'http://www.armageddonenergy.com/', 'We built the company\'s mobile dashboard for tracking solar panel effectiveness.'],
-      # ['Public Library of Science', 'http://www.plos.org/'],
+      ['Public Library of Science', 'http://www.plos.org/'],
       ['Mid Ventures', 'http://midventures.com/', 'We designed and built the mobile app for the Mid Ventures Data 2.0 Conference.']].map do |name, url, title|
         [name, url, title, name.downcase.split.join('-')]
       end
 
   - clients.each do |name, url, title, slug|
     %a.iframe{ :href => "#{url}", :title => title }<
-      %img.gray{ :src => "/images/clients/#{slug}-gray.png", :alt => name }
-      %img.color{ :src => "/images/clients/#{slug}.png", :alt => name }
-
-#tech
-  %h2 Tech
-  :ruby
-    tech = [
-      ['rails', 'Ruby on Rails', 'http://rubyonrails.org/'],
-      ['nodejs', 'node.js', 'http://nodejs.org/'],
-      ['jquery', 'jQuery', 'http://jquery.com/'],
-      ['mongodb', 'mongoDB', 'http://www.mongodb.org/'],
-      ['mysql', 'MySQL', 'http://www.mysql.com/'],
-      ['ios', 'iOS', 'http://www.apple.com/ios/'],
-      ['android', 'Android', 'http://www.android.com/']]
-  - tech.each do |img, title, url|
-    %a{ :href => url }<
-      %img{ :src => "/images/technologies/#{img}.png", :title => title }
+      %img{ :src => "/images/clients/#{slug}.png", :alt => name }
 
 #team
   %h2 Team
@@ -84,3 +68,18 @@
             %img{ :src => "/images/icons/twitter.png" }
           %a{ :href => "mailto:#{email}" }<
             %img{ :src => "/images/icons/email.png" }
+
+#tech
+  %h2 Tech
+  :ruby
+    tech = [
+      ['rails', 'Ruby on Rails', 'http://rubyonrails.org/'],
+      ['nodejs', 'node.js', 'http://nodejs.org/'],
+      ['jquery', 'jQuery', 'http://jquery.com/'],
+      ['mongodb', 'mongoDB', 'http://www.mongodb.org/'],
+      ['mysql', 'MySQL', 'http://www.mysql.com/'],
+      ['ios', 'iOS', 'http://www.apple.com/ios/'],
+      ['android', 'Android', 'http://www.android.com/']]
+  - tech.each do |img, title, url|
+    %a{ :href => url }<
+      %img{ :src => "/images/technologies/#{img}.png", :title => title }

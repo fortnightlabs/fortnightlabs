@@ -10,6 +10,10 @@
 =rounded(!radius=3px)
   :border-radius = !radius
 
+=opacity(!num=0.5)
+  :opacity !num
+  :filter alpha(opacity=#{!num * 100})
+
 =gradient
   :background-image -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(0, 0, 0, 0.2)))
   :background-image -moz-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2))
@@ -80,17 +84,16 @@ nav
       :margin 0.5em 0px
   a
     :text-decoration none
+    :color #222
   a.logo
     :padding 5px 5px 5px 15px
-    :background-color = !dark_sepia
-    :color #fff
+    :color = !dark_sepia
     :text-shadow rgba(0, 0, 0, 0.8) 0px -1px 0px
-    +rounded
 
 #contents
   :min-height 600px
   :position relative
-  :margin-left 220px
+  :margin-left 250px
   p
     :line-height 180%
   p:first-child
@@ -108,6 +111,8 @@ nav
   :margin-top 3em
 
 body
+  h2
+    :margin-bottom 0.25em
   #team
     .members
       :overflow hidden
@@ -126,21 +131,18 @@ body
   #tech
     img
       :height 35px
-      :padding 2px
+      :padding 5px
   #portfolio
     img
       :box-shadow 0px 0px 2px hsla(0, 0%, 0%, 0.2)
       :padding 2px
   #clients
     :margin 10px auto
-    table
-      :width 100%
-      td
-        :text-align center
     img
       :width 120px
-      &.color
-        :display none
+      +opacity(0.5)
+      &:hover
+        +opacity(1)
     a:hover
       img
         &.gray
