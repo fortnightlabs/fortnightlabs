@@ -68,18 +68,3 @@
             %img{ :src => "/images/icons/twitter.png" }
           %a{ :href => "mailto:#{email}" }<
             %img{ :src => "/images/icons/email.png" }
-
-#tech
-  %h2 Tech
-  :ruby
-    tech = [
-      ['rails', 'Ruby on Rails', 'http://rubyonrails.org/'],
-      ['nodejs', 'node.js', 'http://nodejs.org/'],
-      ['jquery', 'jQuery', 'http://jquery.com/'],
-      ['mongodb', 'mongoDB', 'http://www.mongodb.org/'],
-      ['mysql', 'MySQL', 'http://www.mysql.com/'],
-      ['ios', 'iOS', 'http://www.apple.com/ios/'],
-      ['android', 'Android', 'http://www.android.com/']]
-  - tech.each do |img, title, url|
-    %a{ :href => url }<
-      %img{ :src => "/images/technologies/#{img}.png", :title => title }
