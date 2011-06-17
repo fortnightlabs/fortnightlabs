@@ -54,17 +54,19 @@
     team = [
       # ['Huned', 'Botee', 'huned', 'huned', 'hunedx@gmail.com'],
       ['Visnu', 'Pitiyanuvath', 'visnu', 'visnup', 'visnu@fortnightlabs.com'],
-      ['Gerad', 'Suyderhoud', 'geradsuyderhoud', 'gerad', 'gerad@fortnightlabs.com']]
+      ['Gerad', 'Suyderhoud', 'geradsuyderhoud', 'gerad', 'gerad@fortnightlabs.com'],
+      ['Aaron', 'Staple', 'aaronstaple', nil, 'aaron@fortnightlabs.com']]
   .members
     - team.each do |first_name, last_name, linkedin_id, twitter_id, email|
       .member
-        %img.avatar{ :src => "http://gravatar.com/avatar/#{Digest::MD5.hexdigest(email)}?s=60"}
+        %img.avatar{ :src => "http://gravatar.com/avatar/#{Digest::MD5.hexdigest(email)}?s=60&d=wavatar"}
         .first-name= first_name
         .last-name= last_name
         .icons
           %a{ :href => "http://linkedin.com/in/#{linkedin_id}" }<
             %img{ :src => "/images/icons/linkedin.png" }
-          %a{ :href => "http://twitter.com/#{twitter_id}" }<
-            %img{ :src => "/images/icons/twitter.png" }
+          - if twitter_id
+            %a{ :href => "http://twitter.com/#{twitter_id}" }<
+              %img{ :src => "/images/icons/twitter.png" }
           %a{ :href => "mailto:#{email}" }<
             %img{ :src => "/images/icons/email.png" }
