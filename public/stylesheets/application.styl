@@ -1,0 +1,131 @@
+blue = #069
+
+border-radius()
+  -webkit-border-radius arguments
+  -moz-border-radius arguments
+  border-radius arguments
+
+box-shadow()
+  -webkit-box-shadow arguments
+  -moz-box-shadow arguments
+  box-shadow arguments
+
+aside, section, footer
+  display block
+
+body, input, textarea, h1, h2, h3
+  font-family georgia, serif
+  font-weight 300
+  color #222
+
+body
+  margin 0
+  padding 0
+  font-size large
+  font-weight 300
+  text-align center
+  overflow-y scroll
+
+input[type=submit], button, a.button
+  color #fff
+  text-shadow hsla(0, 0%, 0%, 0.8) 0 -1px 0
+  background-color blue
+  background blue -webkit-linear-gradient(-90deg, hsla(0, 0%, 100%, 0.5), hsla(0, 0%, 100%, 0.1) 50%)
+  background blue -moz-linear-gradient(-90deg, hsla(0, 0%, 100%, 0.5), hsla(0, 0%, 100%, 0.1) 50%)
+  padding 5px 8px
+  border solid 1px hsla(0, 0%, 0%, 0.2)
+  border-radius 2px
+  box-shadow inset 0px 0px 5px hsla(0, 0%, 0%, 0.3)
+  &:hover
+    text-decoration none
+  &:active
+    box-shadow inset 0px 1px 8px hsla(0, 0%, 0%, 0.5)
+    color #eee
+
+a
+  color blue
+  text-decoration none
+  &:hover
+    text-decoration underline
+
+a img
+  border none
+
+#page
+  text-align left
+  margin 2em auto
+  width 800px
+aside
+  float left
+  width 180px
+  text-align center
+  h1
+    font-family "IM Fell Great Primer", serif
+    margin-top 0
+    img
+      width 160px
+      height 160px
+  ul
+    list-style-type none
+    padding-left 0
+    li
+      margin 0.5em 0
+  a
+    text-decoration none
+    color #222
+  a.logo
+    padding 5px 5px 5px 15px
+    text-shadow rgba(0, 0, 0, 0.8) 0px -1px 0px
+  #team
+    margin-top 2em
+    text-align left
+    li
+      clear left
+      .avatar
+        float left
+        margin-right 10px
+        border-radius 2px
+      .name
+        line-height 100%
+        .last
+          font-size small
+      .icons
+        margin-top 0.25em
+        img
+          margin-right 5px
+
+#contents
+  margin-left 230px
+  p
+    line-height 150%
+
+footer
+  text-align center
+  margin-top 3em
+
+body
+  #pitch h1
+    font-size 2em
+  h2
+    margin-bottom 0.5em
+  #tech
+    img
+      height 35px
+      padding 5px
+  #portfolio
+    img
+      border solid 1px hsla(0, 0%, 0%, 0.2)
+      border-radius 2px
+      margin 2px
+  #clients
+    img
+      width 120px
+      opacity 0.5
+      &:hover
+        opacity 1
+    a:hover
+      img
+        &.gray
+          display none
+        &.color
+          display inline-block

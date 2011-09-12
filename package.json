@@ -1,0 +1,27 @@
+{
+  "author": "",
+  "name": "fortnightlabs",
+  "version": "0.0.0",
+  "homepage": "http://fortnightlabs.com",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fortnightlabs/fortnightlabs.git"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "./node_modules/.bin/nodemon --debug"
+  },
+  "engines": {
+    "node": "~v0.4.11"
+  },
+  "dependencies": {
+    "coffee-script": "1.1.2",
+    "discount": "0.2.0",
+    "express": "2.4.6",
+    "jade": "0.15.4",
+    "stylus": "0.15.2"
+  },
+  "devDependencies": {
+    "nodemon": "0.5.5"
+  }
+}
