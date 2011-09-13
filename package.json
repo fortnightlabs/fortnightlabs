@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "coffee-script": "1.1.2",
-    "discount": "0.2.0",
+    "discount": "0.2.2",
     "express": "2.4.6",
     "jade": "0.15.4",
     "stylus": "0.15.2"
