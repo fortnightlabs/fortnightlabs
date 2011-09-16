@@ -34,9 +34,11 @@ app.get '/', (req, res) ->
     clients: clients
     projects: projects
     tech: tech
+    template: 'index'
 
 app.get '/process', (req, res) ->
-  res.render 'process'
+  res.render 'process',
+    template: 'process'
 
 app.listen process.env.PORT || 8000
 
