@@ -27,7 +27,7 @@ aside #team li .icons img{margin-right:5px}
 footer{text-align:center;font-size:small;margin-top:3em}
 body.index #contents{text-align:center}
 body.index .action{margin:1.25em 0 1.5em}
-body.index h3{margin:2em auto 1em;padding-bottom:.5em;border-bottom:solid 1px rgba(0,0,0,0.10);width:25%}
+body.index h3{margin:2em auto .5em;padding-bottom:.25em;border-bottom:solid 1px rgba(0,0,0,0.20);width:25%}
 body.index img{vertical-align:center}
 body.index #clients img{width:240px;opacity:.5;}
 body.index #clients img:hover{opacity:1}
