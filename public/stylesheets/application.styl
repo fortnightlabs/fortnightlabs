@@ -25,6 +25,7 @@ body
   font-weight 300
   text-align center
   overflow-y scroll
+  background #dddde0 url(/images/noise.png) repeat
 
 input[type=submit], button, a.button
   color #fff
@@ -55,10 +56,15 @@ a img
   text-align left
   margin 2em auto
   width 800px
+
 aside
   float left
   width 180px
   text-align center
+  padding-top 20px
+  text-shadow hsla(0, 0%, 100%, 0.8) 0px 1px 0px
+  &, a
+    color #333
   h1
     font-family "IM Fell Great Primer", serif
     margin-top 0
@@ -70,12 +76,8 @@ aside
     padding-left 0
     li
       margin 0.5em 0
-  a
-    text-decoration none
-    color #222
   a.logo
     padding 5px 5px 5px 15px
-    text-shadow rgba(0, 0, 0, 0.8) 0px -1px 0px
   #team
     margin-top 2em
     text-align left
@@ -83,29 +85,44 @@ aside
       clear left
       .avatar
         float left
-        margin-right 10px
+        margin 0 10px 1em 0
+        //border solid 1px hsla(0, 0%, 0%, 0.3)
+        box-shadow 0 0 3px hsla(0, 0%, 0%, 0.2)
+        padding 3px
+        background-color white
         border-radius 2px
+        width 70px
+        height 70px
       .name
         line-height 100%
         .last
-          font-size small
+          font-size medium
       .icons
         margin-top 0.25em
         img
           margin-right 5px
 
 #contents
-  margin-left 230px
+  margin-left 220px
+  background-color #fff
+  background-color hsla(0, 0%, 100%, 0.9)
+  padding 20px 40px
+  box-shadow 0 0 3px hsla(0, 0%, 0%, 0.2)
+  border-radius 2px
   p
     line-height 150%
 
 footer
   text-align center
+  font-size small
   margin-top 3em
 
 body
   #pitch h1
     font-size 2em
+  .action
+    text-align center
+    margin 1.25em 0 1.5em
   h2
     margin-bottom 0.5em
   #tech

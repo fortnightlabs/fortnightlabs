@@ -34,7 +34,7 @@ html
             - team = [ ['Visnu', 'Pitiyanuvath', 'visnu', 'visnup', 'visnu@fortnightlabs.com'], ['Gerad', 'Suyderhoud', 'geradsuyderhoud', 'gerad', 'gerad@fortnightlabs.com'], ['Aaron', 'Staple', 'aaronstaple', null, 'aaron@fortnightlabs.com']]
             - each member in team
               li
-                img.avatar( src="http://gravatar.com/avatar/#{md5(member[4])}?s=60&d=monsterid" )
+                img.avatar( src="http://gravatar.com/avatar/#{md5(member[4])}?s=70&d=monsterid" )
                 .name
                   = member[0]
                   br
@@ -51,3 +51,17 @@ html
         footer &copy; 2011 fortnight labs
 
       #contents!= body
+      script( type="text/javascript" )
+        $(function() {
+          var n = 0,
+              stylesheets = $('link[rel="stylesheet"][href^="/"]');
+          (function loop() {
+            stylesheets.each(function(i, s) {
+              $(s).prop('href', function(i, href) {
+                return href.replace(/\\?.*|$/, '?' + n++);
+              });
+            });
+
+            setTimeout(loop, 1000);
+          })();
+        });

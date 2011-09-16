@@ -19,7 +19,7 @@
     "discount": "0.2.2",
     "express": "2.4.6",
     "jade": "0.15.4",
-    "stylus": "0.15.2"
+    "stylus": "0.15.4"
   },
   "devDependencies": {
     "nodemon": "0.5.5"

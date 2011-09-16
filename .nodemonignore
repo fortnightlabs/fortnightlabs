@@ -1,3 +1,4 @@
 ./.git/*
 ./designs/*
+./public/*
 ./views/*
