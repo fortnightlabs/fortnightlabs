@@ -15,20 +15,20 @@ section#pitch
     a.button( href="mailto:all@fortnightlabs.com" ) Email us
 
 section#clients
-  h2 Clients
+  h3 Clients
   - each client in clients
     - slug = client.name.toLowerCase().replace(/\W+/g, '-')
     a.iframe( href=client.url, title=client.name )
       img( src="/images/clients/#{slug}.png", alt=client.name )
 
 section#portfolio
-  h2 Work
+  h3 Work
   - each project in projects
     a( href="/images/screenshots/large/#{project.name}.png" )
       img( src="/images/screenshots/#{project.name}.png", title=project.description )
 
 section#tech
-  h2 Technology
+  h3 Technology
   - each t in tech
     a( href=t.url )
       img( src="/images/technologies/#{t.slug}.png", title=t.name )
