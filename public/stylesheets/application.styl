@@ -10,6 +10,11 @@ box-shadow()
   -moz-box-shadow arguments
   box-shadow arguments
 
+transition()
+  -webkit-transition arguments
+  -moz-transition arguments
+  transition arguments
+
 aside, section, footer
   display block
 
@@ -33,12 +38,14 @@ input[type=submit], button, a.button
   background-color blue
   background blue -webkit-linear-gradient(-90deg, hsla(0, 0%, 100%, 0.5), hsla(0, 0%, 100%, 0.1) 50%)
   background blue -moz-linear-gradient(-90deg, hsla(0, 0%, 100%, 0.5), hsla(0, 0%, 100%, 0.1) 50%)
-  padding 5px 8px
+  padding 5px 20px
   border solid 1px hsla(0, 0%, 0%, 0.2)
   border-radius 2px
   box-shadow inset 0px 0px 5px hsla(0, 0%, 0%, 0.3)
+  transition background-color 200ms linear
   &:hover
     text-decoration none
+    background-color hsl(200, 100%, 40%)
   &:active
     box-shadow inset 0px 1px 8px hsla(0, 0%, 0%, 0.5)
     color #eee
@@ -76,8 +83,6 @@ aside
     padding-left 0
     li
       margin 0.5em 0
-  a.logo
-    padding 5px 5px 5px 15px
   #team
     margin-top 2em
     text-align left
@@ -124,7 +129,7 @@ body
     text-align center
     margin 1.25em 0 1.5em
   h2
-    margin-bottom 0.5em
+    margin 1.5em 0 0.5em
   #tech
     img
       height 35px
