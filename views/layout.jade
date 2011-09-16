@@ -53,16 +53,14 @@ html
       #contents!= body
       script( type="text/javascript" )
         $(function() {
-          return;
-          var n = 0,
-              stylesheets = $('link[rel="stylesheet"][href^="/"]');
+          if (location.host !== 'localhost:8000') return;
+          var n = 0, stylesheets = $('link[rel="stylesheet"][href^="/"]');
           (function loop() {
             stylesheets.each(function(i, s) {
               $(s).prop('href', function(i, href) {
                 return href.replace(/\\?.*|$/, '?' + n++);
               });
             });
-
             setTimeout(loop, 1000);
           })();
         });
