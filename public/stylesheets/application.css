@@ -22,7 +22,7 @@ aside #team li .name .last{font-size:medium}
 aside #team li .icons{margin-top:.25em;}
 aside #team li .icons img{margin-right:5px}
 #contents{margin-left:220px;background-color:#fff;background-color:rgba(255,255,255,0.90);padding:20px 40px;-webkit-box-shadow:0 0 3px rgba(0,0,0,0.20);-moz-box-shadow:0 0 3px rgba(0,0,0,0.20);box-shadow:0 0 3px rgba(0,0,0,0.20);-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;}
-#contents p{line-height:150%}
+#contents p,#contents li{line-height:150%}
 footer{text-align:center;font-size:small;margin-top:3em}
 body #pitch h1{font-size:2em}
 body .action{text-align:center;margin:1.25em 0 1.5em}
