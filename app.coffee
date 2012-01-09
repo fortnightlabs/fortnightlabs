@@ -58,8 +58,8 @@ projects = [
 ,
   name: 'monitaur'
   description: '''
-    Built in a weekend, Monitaur makes it really simple to ensure your web
-    servers are running effectively.
+    Built in a weekend with Huned Botee, Monitaur makes it really simple to
+    ensure your web servers are running effectively.
     '''
 ,
   name: 'happytrack'
@@ -75,13 +75,15 @@ projects = [
 ,
   name: 'gentrify'
   description: '''
-    Built in a weekend, Gentriy was a tongue-in-cheek way for urbanites to find
-    apartments. Featured in VentureBeat and Laughing Squid.
+    Built in a weekend with Brent Fitzgerald, Gentriy was a tongue-in-cheek way
+    for urbanites to find apartments. Featured in VentureBeat and Laughing
+    Squid.
     '''
 ,
   name: 'lazeroids'
   description: '''
-    Another weekend project. Massively multiplayer online asteroids.
+    Another weekend project with Huned Botee. Massively multiplayer online
+    asteroids.
     '''
 ,
   name: 'd2c'
