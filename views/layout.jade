@@ -31,7 +31,7 @@ html
             | San Francisco, CA
         section#team
           ul
-            - team = [ ['Visnu', 'Pitiyanuvath', 'visnu', 'visnup', 'visnu@fortnightlabs.com'], ['Gerad', 'Suyderhoud', 'geradsuyderhoud', 'gerad', 'gerad@fortnightlabs.com'], ['Aaron', 'Staple', 'aaronstaple', null, 'aaron@fortnightlabs.com']]
+            - team = [ ['Visnu', 'Pitiyanuvath', 'visnu', 'visnup', 'visnu@fortnightlabs.com'], ['Gerad', 'Suyderhoud', 'geradsuyderhoud', 'gerad', 'gerad@fortnightlabs.com']]
             - each member in team
               li
                 img.avatar( src="http://gravatar.com/avatar/#{md5(member[4])}?s=70&d=monsterid" )
