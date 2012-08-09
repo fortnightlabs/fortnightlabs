@@ -31,7 +31,7 @@ html
             | San Francisco, CA
         section#team
           ul
-            - team = [ ['Visnu', 'Pitiyanuvath', 'visnu', 'visnup', 'visnu@fortnightlabs.com'], ['Gerad', 'Suyderhoud', 'geradsuyderhoud', 'gerad', 'gerad@fortnightlabs.com'], ['Aaron', 'Staple', 'aaronstaple', null, 'aaron@fortnightlabs.com']]
+            - team = [ ['Visnu', 'Pitiyanuvath', 'visnu', 'visnup', 'visnu@fortnightlabs.com'], ['Gerad', 'Suyderhoud', 'geradsuyderhoud', 'gerad', 'gerad@fortnightlabs.com']]
             - each member in team
               li
                 img.avatar( src="http://gravatar.com/avatar/#{md5(member[4])}?s=70&d=monsterid" )
@@ -52,6 +52,7 @@ html
 
       #contents!= body
       script( type="text/javascript" )
+        // automatically reload stylesheets in development
         $(function() {
           if (location.host !== 'localhost:8000') return;
           var n = 0, stylesheets = $('link[rel="stylesheet"][href^="/"]');
