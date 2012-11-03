@@ -1,14 +1,14 @@
 aside,section,footer{display:block}
 body,input,textarea,h1,h2,h3{font-family:georgia,serif;font-weight:300;color:#222}
 body{margin:0;padding:0;font-size:large;font-weight:300;text-align:center;overflow-y:scroll;background:#dddde0 url("/images/noise.png") repeat}
-input[type=submit],button,a.button{color:#fff;text-shadow:rgba(0,0,0,0.80) 0 -1px 0;background-color:#069;background:#069 -webkit-linear-gradient(-90deg,rgba(255,255,255,0.50),rgba(255,255,255,0.10) 50%);background:#069 -moz-linear-gradient(-90deg,rgba(255,255,255,0.50),rgba(255,255,255,0.10) 50%);padding:5px 20px;border:solid 1px rgba(0,0,0,0.20);-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;-webkit-box-shadow:inset 0 0 5px rgba(0,0,0,0.30);-moz-box-shadow:inset 0 0 5px rgba(0,0,0,0.30);box-shadow:inset 0 0 5px rgba(0,0,0,0.30);-webkit-transition:background-color 200ms linear;-moz-transition:background-color 200ms linear;transition:background-color 200ms linear;}
+input[type=submit],button,a.button{color:#fff;text-shadow:rgba(0,0,0,0.8) 0 -1px 0;background-color:#069;background:#069 -webkit-linear-gradient(-90deg,rgba(255,255,255,0.5),rgba(255,255,255,0.1) 50%);background:#069 -moz-linear-gradient(-90deg,rgba(255,255,255,0.5),rgba(255,255,255,0.1) 50%);padding:5px 20px;border:solid 1px rgba(0,0,0,0.2);-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;-webkit-box-shadow:inset 0 0 5px rgba(0,0,0,0.3);-moz-box-shadow:inset 0 0 5px rgba(0,0,0,0.3);box-shadow:inset 0 0 5px rgba(0,0,0,0.3);-webkit-transition:background-color 200ms linear;-moz-transition:background-color 200ms linear;transition:background-color 200ms linear;}
 input[type=submit]:hover,button:hover,a.button:hover{text-decoration:none;background-color:#08c}
-input[type=submit]:active,button:active,a.button:active{-webkit-box-shadow:inset 0 1px 8px rgba(0,0,0,0.50);-moz-box-shadow:inset 0 1px 8px rgba(0,0,0,0.50);box-shadow:inset 0 1px 8px rgba(0,0,0,0.50);color:#eee}
+input[type=submit]:active,button:active,a.button:active{-webkit-box-shadow:inset 0 1px 8px rgba(0,0,0,0.5);-moz-box-shadow:inset 0 1px 8px rgba(0,0,0,0.5);box-shadow:inset 0 1px 8px rgba(0,0,0,0.5);color:#eee}
 a{color:#069;text-decoration:none;}
 a:hover{text-decoration:underline}
 a img{border:none}
 #page{text-align:left;margin:2em auto;width:900px}
-aside{float:left;width:180px;text-align:center;padding:20px 40px;text-shadow:rgba(255,255,255,0.80) 0 1px 0;}
+aside{float:left;width:180px;text-align:center;padding:20px 40px;text-shadow:rgba(255,255,255,0.8) 0 1px 0;}
 aside,aside a{color:#333;-webkit-transition:color 100ms linear;-moz-transition:color 100ms linear;transition:color 100ms linear}
 aside:hover a{color:#069}
 aside h1{font-family:"IM Fell Great Primer",serif;margin-top:0;}
@@ -17,21 +17,21 @@ aside ul{list-style-type:none;padding-left:0;}
 aside ul li{margin:.5em 0}
 aside #team{margin-top:2em;text-align:left;}
 aside #team li{clear:left;}
-aside #team li .avatar{float:left;margin:0 10px 1em 0;-webkit-box-shadow:0 0 3px rgba(0,0,0,0.20);-moz-box-shadow:0 0 3px rgba(0,0,0,0.20);box-shadow:0 0 3px rgba(0,0,0,0.20);padding:3px;background-color:#fff;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;width:70px;height:70px}
+aside #team li .avatar{float:left;margin:0 10px 1em 0;-webkit-box-shadow:0 0 3px rgba(0,0,0,0.2);-moz-box-shadow:0 0 3px rgba(0,0,0,0.2);box-shadow:0 0 3px rgba(0,0,0,0.2);padding:3px;background-color:#fff;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;width:70px;height:70px}
 aside #team li .name{line-height:100%;}
 aside #team li .name .last{font-size:medium}
 aside #team li .icons{margin-top:.25em;}
 aside #team li .icons img{margin-right:5px}
-#contents{margin-left:260px;background-color:#fff;background-color:rgba(255,255,255,0.90);padding:40px;-webkit-box-shadow:0 0 3px rgba(0,0,0,0.20);-moz-box-shadow:0 0 3px rgba(0,0,0,0.20);box-shadow:0 0 3px rgba(0,0,0,0.20);-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;}
+#contents{margin-left:260px;background-color:#fff;background-color:rgba(255,255,255,0.9);padding:40px;-webkit-box-shadow:0 0 3px rgba(0,0,0,0.2);-moz-box-shadow:0 0 3px rgba(0,0,0,0.2);box-shadow:0 0 3px rgba(0,0,0,0.2);-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;}
 #contents p,#contents li{line-height:150%}
 footer{text-align:center;font-size:small;margin-top:3em}
 body.index #contents{text-align:center}
 body.index .action{margin:1.25em 0 1.5em}
-body.index h3{margin:2em auto .5em;padding-bottom:.25em;border-bottom:solid 1px rgba(0,0,0,0.20);width:25%}
+body.index h3{margin:2em auto .5em;padding-bottom:.25em;border-bottom:solid 1px rgba(0,0,0,0.2);width:25%}
 body.index img{vertical-align:center}
 body.index #clients img{width:240px;opacity:.5;}
 body.index #clients img:hover{opacity:1}
 body.index #clients a:hover img.gray{display:none}
 body.index #clients a:hover img.color{display:inline-block}
-body.index #portfolio img{border:solid 1px rgba(0,0,0,0.20);-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;margin:2px}
+body.index #portfolio img{border:solid 1px rgba(0,0,0,0.2);-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;margin:2px}
 body.index #tech img{height:35px;padding:5px}
