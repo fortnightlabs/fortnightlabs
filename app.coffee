@@ -1,7 +1,7 @@
 crypto = require 'crypto'
 express = require 'express'
 
-app = express.createServer()
+app = express()
 
 app.paths =
   public: __dirname + '/public'
@@ -10,7 +10,12 @@ app.paths =
 app.configure ->
   stylus = require 'stylus'
 
+  app.set 'views', __dirname + '/views'
   app.set 'view engine', 'jade'
+
+  app.use express.logger('dev')
+  app.use express.compress()
+
   app.use stylus.middleware
     src: app.paths.public
     dest: app.paths.public

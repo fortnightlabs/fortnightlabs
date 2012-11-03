@@ -17,9 +17,9 @@
   "dependencies": {
     "coffee-script": "1.1.2",
     "marked": "0.2.5",
-    "express": "2.4.6",
+    "express": "3.0.1",
     "jade": "0.27.6",
-    "stylus": "0.15.4"
+    "stylus": "0.30.1"
   },
   "devDependencies": {
     "nodemon": "0.6.23"

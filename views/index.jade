@@ -1,34 +1,37 @@
-h1 Big dreams. Swift starts.
+extends layout
 
-section#pitch
-  :markdown
-    We make web and mobile apps that people love.
+block body
+  h1 Big dreams. Swift starts.
 
-    We take **your idea** from high-level concept to useful product in as
-    little as [two weeks]. We charge $200/hr.
+  section#pitch
+    :markdown
+      We make web and mobile apps that people love.
 
-    [two weeks]: /process
+      We take **your idea** from high-level concept to useful product in as
+      little as [two weeks]. We charge $200/hr.
 
-  h2.action
-    b Interested?
-    &nbsp;
-    a.button( href="mailto:all@fortnightlabs.com" ) Email us
+      [two weeks]: /process
 
-section#clients
-  h3 Clients
-  - each client in clients
-    - slug = client.name.toLowerCase().replace(/\W+/g, '-')
-    a.iframe( href=client.url, title=client.name )
-      img( src="/images/clients/#{slug}.png", alt=client.name )
+    h2.action
+      b Interested?
+      &nbsp;
+      a.button( href="mailto:all@fortnightlabs.com" ) Email us
 
-section#portfolio
-  h3 Work
-  - each project in projects
-    a( href="/images/screenshots/large/#{project.name}.png" )
-      img( src="/images/screenshots/#{project.name}.png", title=project.description )
+  section#clients
+    h3 Clients
+    - each client in clients
+      - slug = client.name.toLowerCase().replace(/\W+/g, '-')
+      a.iframe( href=client.url, title=client.name )
+        img( src="/images/clients/#{slug}.png", alt=client.name )
 
-section#tech
-  h3 Technology
-  - each t in tech
-    a( href=t.url )
-      img( src="/images/technologies/#{t.slug}.png", title=t.name )
+  section#portfolio
+    h3 Work
+    - each project in projects
+      a( href="/images/screenshots/large/#{project.name}.png" )
+        img( src="/images/screenshots/#{project.name}.png", title=project.description )
+
+  section#tech
+    h3 Technology
+    - each t in tech
+      a( href=t.url )
+        img( src="/images/technologies/#{t.slug}.png", title=t.name )
