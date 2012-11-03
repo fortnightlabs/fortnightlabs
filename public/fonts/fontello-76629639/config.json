@@ -1,0 +1,37 @@
+{
+  "name": "fontello",
+  "glyphs": [
+    {
+      "uid": "ae3so8q0b0n2h8esv9flua2nmwswa8fd",
+      "orig_css": "mail",
+      "orig_code": 59394,
+      "css": "mail",
+      "code": 59394,
+      "src": "modernpics"
+    },
+    {
+      "uid": "4a0bb1ac004980bb3837560d4c9e8cee",
+      "orig_css": "github",
+      "orig_code": 62216,
+      "css": "github",
+      "code": 62216,
+      "src": "brandico"
+    },
+    {
+      "uid": "e9e96618b0f44170930f9b179237c76e",
+      "orig_css": "linkedin-rect",
+      "orig_code": 62235,
+      "css": "linkedin",
+      "code": 62235,
+      "src": "brandico"
+    },
+    {
+      "uid": "4c01f5d3ba5fbf029bca8630cce41e6a",
+      "orig_css": "twitter-bird",
+      "orig_code": 62211,
+      "css": "twitter",
+      "code": 62211,
+      "src": "brandico"
+    }
+  ]
+}
