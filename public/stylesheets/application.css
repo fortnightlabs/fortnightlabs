@@ -7,7 +7,7 @@ input[type=submit]:active,button:active,a.button:active{-webkit-box-shadow:inset
 a{color:#069;text-decoration:none;}
 a:hover{text-decoration:underline}
 a img{border:none}
-#page{text-align:left;margin:2em auto;width:900px}
+#page{text-align:left;margin:2em auto;width:1000px}
 aside{float:left;width:180px;text-align:center;padding:20px 40px;text-shadow:rgba(255,255,255,0.8) 0 1px 0;}
 aside,aside a{color:#333;-webkit-transition:color 100ms linear;-moz-transition:color 100ms linear;transition:color 100ms linear}
 aside:hover a{color:#069}
@@ -25,13 +25,17 @@ aside #team li .icons img{margin-right:5px}
 #contents{margin-left:260px;background-color:#fff;background-color:rgba(255,255,255,0.9);padding:40px;-webkit-box-shadow:0 0 3px rgba(0,0,0,0.2);-moz-box-shadow:0 0 3px rgba(0,0,0,0.2);box-shadow:0 0 3px rgba(0,0,0,0.2);-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;}
 #contents p,#contents li{line-height:150%}
 footer{text-align:center;font-size:small;margin-top:3em}
-body.index #contents{text-align:center}
+body.index #contents{text-align:center;overflow:hidden}
 body.index .action{margin:1.25em 0 1.5em}
-body.index h3{margin:2em auto .5em;padding-bottom:.25em;border-bottom:solid 1px rgba(0,0,0,0.2);width:25%}
+body.index h3{margin:2em auto .5em}
 body.index img{vertical-align:center}
-body.index #clients img{width:240px;opacity:.5;}
-body.index #clients img:hover{opacity:1}
+body.index #clients{float:left;width:45%;}
+body.index #clients img{width:240px;-webkit-transition:-webkit-filter 100ms linear;-moz-transition:-webkit-filter 100ms linear;transition:-webkit-filter 100ms linear;-webkit-filter:grayscale(100%);}
+body.index #clients img:hover{-webkit-filter:grayscale(0%)}
 body.index #clients a:hover img.gray{display:none}
 body.index #clients a:hover img.color{display:inline-block}
-body.index #portfolio img{border:solid 1px rgba(0,0,0,0.2);-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;margin:2px}
+body.index #portfolio{float:left;width:25%;}
+body.index #portfolio img{border:solid 1px rgba(0,0,0,0.2);-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;margin:2px;-webkit-transition:-webkit-filter 100ms linear;-moz-transition:-webkit-filter 100ms linear;transition:-webkit-filter 100ms linear;-webkit-filter:grayscale(100%);}
+body.index #portfolio img:hover{-webkit-filter:grayscale(0%)}
+body.index #tech{float:left;width:30%;}
 body.index #tech img{height:35px;padding:5px}

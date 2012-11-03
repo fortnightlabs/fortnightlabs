@@ -62,7 +62,7 @@ a img
 #page
   text-align left
   margin 2em auto
-  width 900px
+  width 1000px
 
 aside
   float left
@@ -128,21 +128,22 @@ footer
 body.index
   #contents
     text-align center
+    overflow hidden
   .action
     margin 1.25em 0 1.5em
   h3
     margin 2em auto 0.5em
-    padding-bottom 0.25em
-    border-bottom solid 1px hsla(0, 0%, 0%, 0.2)
-    width 25%
   img
     vertical-align center
   #clients
+    float left
+    width 45%
     img
       width 240px
-      opacity 0.5
+      transition -webkit-filter 100ms linear
+      -webkit-filter grayscale(100%)
       &:hover
-        opacity 1
+        -webkit-filter grayscale(0%)
     a:hover
       img
         &.gray
@@ -150,11 +151,19 @@ body.index
         &.color
           display inline-block
   #portfolio
+    float left
+    width 25%
     img
       border solid 1px hsla(0, 0%, 0%, 0.2)
       border-radius 2px
       margin 2px
+      transition -webkit-filter 100ms linear
+      -webkit-filter grayscale(100%)
+      &:hover
+        -webkit-filter grayscale(0%)
   #tech
+    float left
+    width 30%
     img
       height 35px
       padding 5px
